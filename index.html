@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding: enables all Unicode characters -->
     <meta charset="UTF-8">
+    <!-- Ensures proper scaling on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Preconnect: speeds up font loading from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter font: weights 400, 500, 600, 700 -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main stylesheet for this page -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Fixed banner showing version/context -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Wrapper for all pricing cards; flex container -->
     <div class="cards-container">
+        <!-- Card 1: Hobby plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +46,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary style: outlined/subtle -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card 2: Pro plan -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,7 +80,41 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary style: dark, high-contrast CTA -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+        
+        <!-- Card 3: Enterprise plan -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated support
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO & SAML
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Audit logs
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom integrations
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Primary style for main CTA -->
+            <button class="download-button primary">Contact Sales</button>
         </div>
     </div>
 </body>
