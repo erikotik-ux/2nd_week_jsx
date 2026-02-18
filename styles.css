@@ -160,6 +160,20 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary {
+    background-color: transparent;
+    border: 1px solid #a5a4a1;
+    color: #333;
+}
+
+.download-button.tertiary:hover {
+    background-color: #dddcda;
+}
+
+.download-button.tertiary:active {
+    background-color: #dddcda;
+}
+
 /* ==========================================================================
    Page label (fixed banner)
    ========================================================================== */
